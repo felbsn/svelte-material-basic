@@ -1,0 +1,29 @@
+// @use "@material/floating-label/mdc-floating-label";
+// @use "@material/line-ripple/mdc-line-ripple";
+// @use "@material/notched-outline/mdc-notched-outline";
+// @use "@material/textfield";
+
+// @include textfield.core-styles;
+
+// // @import url("@material/textfield/dist/mdc.textfield.min.css");
+// .mdc-text-field {
+//     @include textfield.density(-1);
+// }
+
+// .mdc-text-field--fullwidth {
+//     width: 100%;
+// }
+
+@import url("@material/textfield/dist/mdc.textfield.min.css");
+
+.mdc-text-field--outlined
+{
+    height: 42px;
+}
+:global(.mdc-text-field .mdc-floating-label--float-above)
+ {
+    transform: translateY(-25.75px) scale(0.75) !important;
+}
+
+
+

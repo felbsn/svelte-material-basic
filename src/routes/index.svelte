@@ -132,6 +132,7 @@
         justify-content: center;
         align-items: center;
 
+        gap: 15px;
         flex-direction: column;
 
         justify-content: space-evenly;

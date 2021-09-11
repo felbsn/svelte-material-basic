@@ -51,10 +51,6 @@
     </label>
 {/if}
 
-<style>
-    @import url("@material/textfield/dist/mdc.textfield.min.css");
-
-    .mdc-text-field--fullwidth {
-        width: 100%;
-    }
+<style lang="scss">
+    @import "styles/textfield";
 </style>
