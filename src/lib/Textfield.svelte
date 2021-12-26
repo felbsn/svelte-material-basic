@@ -6,6 +6,7 @@
     export let label: string;
     export let value: string = "";
     export let fullWidth = false;
+    export let name = "";
 
     let node: HTMLElement;
     let component: MDCTextField;
@@ -26,7 +27,7 @@
     >
         <span class="mdc-text-field__ripple" />
         <span class="mdc-floating-label">{label}</span>
-        <input class="mdc-text-field__input" type="text" bind:value />
+        <input class="mdc-text-field__input" type="text" bind:value {name} />
         <span class="mdc-line-ripple" />
     </label>
 {:else}
@@ -46,6 +47,7 @@
             type="text"
             class="mdc-text-field__input"
             aria-labelledby="my-label-id"
+            {name}
             bind:value
         />
     </label>
